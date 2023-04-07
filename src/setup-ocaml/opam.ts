@@ -112,7 +112,9 @@ async function installUnixSystemPackages() {
       }
       await exec("sudo", [
         "apt-get",
+        "-y",
         "install",
+        "rsync",
         "bubblewrap",
         "darcs",
         "g++-multilib",
